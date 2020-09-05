@@ -6,7 +6,12 @@ RUN apt-get update && apt-get install -yq --no-install-recommends \
   python-rpi.gpio \
   libatomic1 \
   sense-hat \
+  python-pip \
+  python3-pip \
   && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+RUN pip install setuptools wheel
+RUN pip3 install setuptools wheel
 
 # Set time zone
 # https://github.com/balena-io-playground/balena-timezone
