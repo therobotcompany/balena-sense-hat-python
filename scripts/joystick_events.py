@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from sense_emu import SenseHat
+from sense_hat import SenseHat
 from signal import pause
 
 x = y = 4

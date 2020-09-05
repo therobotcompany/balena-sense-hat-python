@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from sense_emu import *
+from sense_hat import *
 import numpy as np
 
 # Draw the foreground (fg) into a numpy array
