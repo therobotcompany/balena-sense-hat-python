@@ -1,0 +1,1 @@
+Basic code to control a Sense Hat with Python scripts in Balena.io
