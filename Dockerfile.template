@@ -20,7 +20,8 @@ ENV INITSYSTEM on
 WORKDIR /usr/src
 
 # All app files
-COPY ./scripts ./
+COPY ./scripts ./scripts
+COPY ./astropi ./astropi
 
 # Start with a bash terminal
 CMD ["bash"]
