@@ -9,7 +9,7 @@ from datetime import datetime
 from threading import Timer
 
 def exitfunc():
-    print "Exit Time", datetime.now()
+    print ("Exit Time", datetime.now())
     os._exit(0)
 
 Timer(5, exitfunc).start() # exit in 5 seconds
