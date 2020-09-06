@@ -5,6 +5,7 @@ echo "Watch the rainbow for 5 seconds to check I'm alive..."
 # Scripts in this folder run with Python3
 ./scripts/rainbow.py &
 
+# Move the joystick so that the menu is visualized in the LED matrix
 echo "You can always read any of temperature, pressure or humidity with sensor_menu.py, using the Sense Hat josytick"
 ./scripts/sensor_menu.py &
 
