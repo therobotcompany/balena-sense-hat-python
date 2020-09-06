@@ -30,4 +30,4 @@ COPY ./astropi ./astropi
 COPY weather_station.py ./
 
 # Start with a bash terminal
-CMD ["bash"]
+CMD ["bash", "start.sh"]
