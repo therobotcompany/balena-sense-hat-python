@@ -29,5 +29,6 @@ COPY ./scripts ./scripts
 COPY ./astropi ./astropi
 COPY weather_station.py ./
 
-# Start with a bash terminal
+# Start with a bash script
+COPY start.sh ./
 CMD ["bash", "start.sh"]
