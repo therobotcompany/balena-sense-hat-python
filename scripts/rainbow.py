@@ -3,6 +3,17 @@ from colorsys import hsv_to_rgb
 from time import sleep
 from sense_hat import SenseHat
 
+# Imports for executing the script a given number of seconds (5s)
+import os
+from datetime import datetime
+from threading import Timer
+
+def exitfunc():
+    print "Exit Time", datetime.now()
+    os._exit(0)
+
+Timer(5, exitfunc).start() # exit in 5 seconds
+
 # Hues represent the spectrum of colors as values between 0 and 1. The range
 # is circular so 0 represents red, ~0.2 is yellow, ~0.33 is green, 0.5 is cyan,
 # ~0.66 is blue, ~0.84 is purple, and 1.0 is back to red. These are the initial
